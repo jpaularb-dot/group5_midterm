@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rm-dark text-rm-light font-body;
+  }
+}
+
+@layer components {
+  .status-alive  { @apply bg-green-500/20 text-green-400 border border-green-500/30; }
+  .status-dead   { @apply bg-red-500/20 text-red-400 border border-red-500/30; }
+  .status-unknown { @apply bg-gray-500/20 text-gray-400 border border-gray-500/30; }
+}
